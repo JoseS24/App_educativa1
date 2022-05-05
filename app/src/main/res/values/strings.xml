@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">App_educativa</string>
+
+    <string name="Boton_inicio">Empezemos</string>
+    <string name="nombre_app">Aprendamos Jugando</string>
+    <string name="saludo">¡Bienvenidos!</string>
+
+    <string name="primera_vez">Crear nueva cuenta</string>
+    <string name="registrado">Iniciar sesion</string>
+
+    <string name="salir">Salir</string>
+
+    <string name="mensaje1">Selecciona el tipo de usuario que seras</string>
+    <string name="alumno">Estudiante</string>
+    <string name="profe">Maestro</string>
+
+    <string name="sesion_alumno">Realizemos tu registro</string>
+    <string name="nombre_alumno">Nombre</string>
+    <string name="edad_alumno">Edad</string>
+    <string name="escuela_alumno">Institucion</string>
+    <string name="telefono_alumno">No.Telefono</string>
+
+    <string name="nombre">nombre</string>
+    <string name="edad">años</string>
+    <string name="escuela">escuela</string>
+    <string name="telefono">celular</string>
+
+    <string name="boton_registro">Guardar</string>
+
+    <string name="usuario">Crea tu usuario y contraseña</string>
+    <string name="nombre_usuario">Nombre de usuario</string>
+    <string name="contraseña">Contraseña</string>
+
+
+</resources>
