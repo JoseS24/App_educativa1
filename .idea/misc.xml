@@ -3,14 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_alumno_registrado.xml" value="0.1" />
+        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_alumno_registrado.xml" value="0.18" />
         <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_crear_cuenta.xml" value="0.2" />
-        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_login.xml" value="0.2" />
-        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_maestro_registrado.xml" value="0.2" />
+        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_ini_sesion_alumno.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_login.xml" value="0.12" />
+        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_maestro_registrado.xml" value="0.16" />
         <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_main.xml" value="0.12001811594202899" />
-        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_reg_alumno.xml" value="0.22" />
-        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_reg_maestro.xml" value="0.25" />
-        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_usuario_alumno.xml" value="0.22" />
+        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_menu_niveles.xml" value="0.1482320942883046" />
+        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_reg_alumno.xml" value="0.25" />
+        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_reg_maestro.xml" value="0.22" />
+        <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_usuario_alumno.xml" value="0.2" />
         <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_usuario_maestro.xml" value="0.22" />
         <entry key="..\:/Users/joshd/AndroidStudioProjects/App_educativa/app/src/main/res/layout/activity_usuario_maestro2.xml" value="0.16032608695652173" />
       </map>

@@ -146,7 +146,7 @@
         app:srcCompat="@drawable/icono_maestro" />
 
     <EditText
-        android:id="@+id/nombre"
+        android:id="@+id/Mnombre"
         android:layout_width="210dp"
         android:layout_height="44dp"
         android:ems="10"
@@ -160,7 +160,7 @@
         app:layout_constraintVertical_bias="0.349" />
 
     <EditText
-        android:id="@+id/años"
+        android:id="@+id/Maños"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -174,7 +174,7 @@
         app:layout_constraintVertical_bias="0.483" />
 
     <EditText
-        android:id="@+id/escuela"
+        android:id="@+id/Mescuela"
         android:layout_width="197dp"
         android:layout_height="46dp"
         android:ems="10"
@@ -188,7 +188,7 @@
         app:layout_constraintVertical_bias="0.611" />
 
     <EditText
-        android:id="@+id/celular"
+        android:id="@+id/Mcelular"
         android:layout_width="190dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -202,7 +202,7 @@
         app:layout_constraintVertical_bias="0.762" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/guardar_maestro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="guardar"

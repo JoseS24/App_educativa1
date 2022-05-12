@@ -10,9 +10,14 @@
         android:id="@+id/imageButton2"
         android:layout_width="53dp"
         android:layout_height="43dp"
-        app:srcCompat="?attr/actionModeCloseDrawable"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="28dp" />
+        android:onClick="regreso_alumno"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <EditText
         android:id="@+id/txtcontraseña"
@@ -90,10 +95,14 @@
         app:layout_constraintVertical_bias="0.065" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/crear_alumno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="guardar_alumno"
         android:text="@string/boton_registro"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="586dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836" />
 </androidx.constraintlayout.widget.ConstraintLayout>

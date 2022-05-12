@@ -31,5 +31,9 @@
     <string name="nombre_usuario">Nombre de usuario</string>
     <string name="contraseña">Contraseña</string>
 
+    <string name="mensaje2">¡¡Felicidades!!</string>
+    <string name="mensaje3">Has completado el registro</string>
+    <string name="mensaje4">¡¡Empezemos!!</string>
+
 
 </resources>

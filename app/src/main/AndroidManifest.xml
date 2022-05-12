@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.app_educativa">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@drawable/icono"
@@ -9,6 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.App_educativa">
+        <activity
+            android:name=".Inicio_sesion.iniciar_sesion"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.menu_niveles"
+            android:exported="false" />
         <activity
             android:name=".Inicio_sesion.alumno_registrado"
             android:exported="false" />
