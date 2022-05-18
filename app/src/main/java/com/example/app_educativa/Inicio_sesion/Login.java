@@ -1,5 +1,6 @@
 package com.example.app_educativa.Inicio_sesion;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,17 +16,21 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
-    //botonera
+
     public void regreso(View view) {
-        Intent regreso= new Intent(this, MainActivity.class);
+        Intent regreso = new Intent(Intent.ACTION_MAIN);
+        regreso.addCategory(Intent.CATEGORY_HOME);
+        regreso.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(regreso);
     }
+
     public void cuenta_nueva(View view) {
         Intent cuenta_nueva = new Intent(this, crear_cuenta.class);
         startActivity(cuenta_nueva);
     }
-    public void incio_sesion(View view){
-        Intent iniciar_sesion = new Intent(this, iniciar_sesion.class);
-        startActivity(iniciar_sesion);
+
+    public void sesion(View view) {
+        Intent iniciar = new Intent(this, crear_cuenta.class);
+        startActivity(iniciar);
     }
 }

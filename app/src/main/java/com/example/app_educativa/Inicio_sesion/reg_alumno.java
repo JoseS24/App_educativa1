@@ -24,7 +24,7 @@ import java.util.Map;
 
 
 public class reg_alumno extends AppCompatActivity {
-    private EditText nombre, edad, escuela, celular;
+    private EditText nombre, edad, celular,usuario,contrasena;
     Button agregar;
 
 
@@ -35,13 +35,15 @@ public class reg_alumno extends AppCompatActivity {
 
         nombre = (EditText) findViewById(R.id.txnombre);
         edad = (EditText) findViewById(R.id.txaños);
-        escuela = (EditText) findViewById(R.id.txescuela);
         celular = (EditText) findViewById(R.id.txcelular);
+        usuario= (EditText)findViewById(R.id.txtnombre2);
+        contrasena=(EditText)findViewById(R.id.txtcontrasena2);
         agregar = (Button) findViewById(R.id.boton_alumno);
 
         agregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 guardar("http://192.168.2.25:8080/app_educativa/insertar_datos.php");
             }
         });
@@ -63,19 +65,17 @@ public class reg_alumno extends AppCompatActivity {
                 Map<String, String> parametros = new HashMap<String, String>();
                 parametros.put("nombre", nombre.getText().toString());
                 parametros.put("edad", edad.getText().toString());
-                parametros.put("escuela", escuela.getText().toString());
                 parametros.put("celular", celular.getText().toString());
+                parametros.put("usuario",usuario.getText().toString());
+                parametros.put("contrasena",contrasena.getText().toString());
                 return parametros;
             }
         };
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
-        Intent crear_usuario = new Intent(this, usuario_alumno.class);
+
+        Intent crear_usuario = new Intent(this, alumno_registrado.class);
         startActivity(crear_usuario);
-    }
-    public void regreso_sesion(View view) {
-        Intent regreso_sesion = new Intent(this, crear_cuenta.class);
-        startActivity(regreso_sesion);
     }
 }
 

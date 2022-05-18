@@ -35,5 +35,8 @@
     <string name="mensaje3">Has completado el registro</string>
     <string name="mensaje4">¡¡Empezemos!!</string>
 
+    <string name="mensaje5">Ingresa tus datos para iniciar</string>
+    <string name="mensaje6">¿No tienes cuenta?Haz clic para crear una</string>
+
 
 </resources>
