@@ -1,6 +1,5 @@
 package com.example.app_educativa.Inicio_sesion;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,6 +14,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
     }
 
     public void regreso(View view) {
@@ -29,8 +29,8 @@ public class Login extends AppCompatActivity {
         startActivity(cuenta_nueva);
     }
 
-    public void sesion(View view) {
-        Intent iniciar = new Intent(this, crear_cuenta.class);
-        startActivity(iniciar);
-    }
+    public void iniciar(View view) {
+       Intent iniciar = new Intent(this, tipo_usuario.class);
+         startActivity(iniciar);
+     }
 }

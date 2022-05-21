@@ -49,8 +49,8 @@ public class reg_maestro extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(getApplicationContext(), "Registro exitoso", Toast.LENGTH_SHORT).show();
-            }
+                    Toast.makeText(getApplicationContext(), "Registro exitoso", Toast.LENGTH_SHORT).show();
+                }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
@@ -70,8 +70,12 @@ public class reg_maestro extends AppCompatActivity {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
 
-        Intent crear_maestro = new Intent(this, maestro_registrado.class);
-        startActivity(crear_maestro);
+        Intent intent = new Intent(this,maestro_registrado.class);
+        startActivity(intent);
+    }
+    public void regreso_menu(View view){
+        Intent regresar = new Intent(this, crear_cuenta.class);
+        startActivity(regresar);
     }
 }
 
