@@ -37,6 +37,21 @@
 
     <string name="mensaje5">Ingresa tus datos para iniciar</string>
     <string name="mensaje6">¿No tienes cuenta?Haz clic para crear una</string>
+    <string name="mensaje7">¿Que tipo de usuario eres?</string>
+    <string name="mensaje8">Olvidaste tu contraseña</string>
+    <string name="mensaje8.1">¡Vamos a recuperarla!</string>
+    <string name="mensaje8.2">Ingresa los datos que registraste</string>
+    <string name="mensaje8.3">Tu contraseña es:</string>
+    <string name="mensaje8.4">Buscar</string>
+
+    <string name="mensaje9">Vamos a entrar</string>
+    <string name="mensaje10">¿Ya tienes cuenta?Haz clic para iniciar sesion</string>
+
+    <string name="olvido">¿Olvidaste tu contraseña?</string>
+    <string name="info">¿Que es aprendamos a jugar?</string>
+    <string name="rfc">Ingrese RFC</string>
+    <string name="referencia">Ingrese los ultimos 5 digitos</string>
+
 
 
 </resources>

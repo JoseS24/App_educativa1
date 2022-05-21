@@ -3,6 +3,7 @@ package com.example.app_educativa.Inicio_sesion;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -24,7 +25,7 @@ import java.util.Map;
 
 
 public class reg_alumno extends AppCompatActivity {
-    private EditText nombre, edad, celular,usuario,contrasena;
+    private EditText nombre, edad, celular, usuario, contrasena;
     Button agregar;
 
 
@@ -36,14 +37,13 @@ public class reg_alumno extends AppCompatActivity {
         nombre = (EditText) findViewById(R.id.txnombre);
         edad = (EditText) findViewById(R.id.txaños);
         celular = (EditText) findViewById(R.id.txcelular);
-        usuario= (EditText)findViewById(R.id.txtnombre2);
-        contrasena=(EditText)findViewById(R.id.txtcontrasena2);
+        usuario = (EditText) findViewById(R.id.txtnombre2);
+        contrasena = (EditText) findViewById(R.id.txtcontrasena2);
         agregar = (Button) findViewById(R.id.boton_alumno);
 
         agregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 guardar("http://192.168.2.25:8080/app_educativa/insertar_datos.php");
             }
         });
@@ -66,16 +66,20 @@ public class reg_alumno extends AppCompatActivity {
                 parametros.put("nombre", nombre.getText().toString());
                 parametros.put("edad", edad.getText().toString());
                 parametros.put("celular", celular.getText().toString());
-                parametros.put("usuario",usuario.getText().toString());
-                parametros.put("contrasena",contrasena.getText().toString());
+                parametros.put("usuario", usuario.getText().toString());
+                parametros.put("contrasena", contrasena.getText().toString());
                 return parametros;
             }
         };
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
 
-        Intent crear_usuario = new Intent(this, alumno_registrado.class);
-        startActivity(crear_usuario);
+        Intent intent = new Intent(this,alumno_registrado.class);
+        startActivity(intent);
+    }
+    public void regreso_menu(View view){
+        Intent regresar = new Intent(this, crear_cuenta.class);
+        startActivity(regresar);
     }
 }
 
