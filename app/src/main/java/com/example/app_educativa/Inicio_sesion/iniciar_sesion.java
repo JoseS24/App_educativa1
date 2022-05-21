@@ -39,7 +39,7 @@ public class iniciar_sesion extends AppCompatActivity {
         iniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validarUsuario("http://192.168.2.25:8080/app_educativa/validar_usuario.php");
+                validarUsuario("http://192.168.28.209:8080/app_educativa/validar_usuario.php");
             }
         });
     }

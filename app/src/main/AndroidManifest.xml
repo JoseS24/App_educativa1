@@ -13,6 +13,9 @@
         android:theme="@style/Theme.App_educativa"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".actividades.menu_basico"
+            android:exported="false" />
+        <activity
             android:name=".apartadoMaestro.menu_maestros"
             android:exported="false" />
         <activity

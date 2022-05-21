@@ -40,7 +40,7 @@ public class recordar_contrasenaM extends AppCompatActivity {
         buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buscarContra_profe("http://192.168.2.25:8080/app_educativa/recuperarContra_profe.php?usuario="+usuario.getText()+"");
+                buscarContra_profe("http://192.168.28.209:8080/app_educativa/recuperarContra_profe.php?usuario="+usuario.getText()+"");
 
             }
         });

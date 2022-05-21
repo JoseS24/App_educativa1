@@ -39,7 +39,7 @@ public class iniciar_sesionMaestro extends AppCompatActivity {
         checar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validarMaestro("http://192.168.2.25:8080/app_educativa/validar_usuarioMaestro.php");
+                validarMaestro("http://192.168.28.209:8080/app_educativa/validar_usuarioMaestro.php");
             }
         });
     }
@@ -47,6 +47,9 @@ public class iniciar_sesionMaestro extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                if(rfc.toString().isEmpty()){
+                    Toast.makeText(iniciar_sesionMaestro.this, "Datos incompletos", Toast.LENGTH_SHORT).show();
+                }
                 if (!response.isEmpty()) {
                     Intent intent = new Intent(getApplicationContext(), menu_maestros.class);
                     startActivity(intent);
