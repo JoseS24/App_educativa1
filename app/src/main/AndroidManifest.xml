@@ -13,25 +13,7 @@
         android:theme="@style/Theme.App_educativa"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".actividades.menu_basico"
-            android:exported="false" />
-        <activity
-            android:name=".apartadoMaestro.menu_maestros"
-            android:exported="false" />
-        <activity
-            android:name=".Inicio_sesion.recordar_contrasenaM"
-            android:exported="false" />
-        <activity
-            android:name=".Inicio_sesion.iniciar_sesionMaestro"
-            android:exported="false" />
-        <activity
-            android:name=".Inicio_sesion.tipo_usuario"
-            android:exported="false" />
-        <activity
-            android:name=".Inicio_sesion.recordar_contrasena"
-            android:exported="false" />
-        <activity
-            android:name=".Inicio_sesion.iniciar_sesion"
+            android:name=".iniciar_sesion"
             android:exported="false" />
         <activity
             android:name=".inicio_sesion"
