@@ -13,7 +13,19 @@
         android:theme="@style/Theme.App_educativa"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".iniciar_sesion"
+            android:name=".iniciar_sesionMaestro"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio_sesion.iniciar_sesion"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio_sesion.tipo_usuario"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio_sesion.tipo_usuario"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.nivel_avanzado"
             android:exported="false" />
         <activity
             android:name=".inicio_sesion"

@@ -40,7 +40,7 @@ public class reg_maestro extends AppCompatActivity {
         agregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    guardarM("http://192.168.28.209:8080/app_educativa/insertar_maestros.php");
+                    guardarM("http://192.168.2.25:8080/app_educativa/insertar_maestros.php");
                 }
         });
     }

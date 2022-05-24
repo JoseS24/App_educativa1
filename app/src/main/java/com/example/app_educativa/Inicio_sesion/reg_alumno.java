@@ -44,7 +44,7 @@ public class reg_alumno extends AppCompatActivity {
         agregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                guardar("http://192.168.28.209:8080/app_educativa/insertar_datos.php");
+                guardar("http://192.168.2.25:8080/app_educativa/insertar_datos.php");
             }
         });
     }

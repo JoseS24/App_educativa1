@@ -52,6 +52,11 @@
     <string name="rfc">Ingrese RFC</string>
     <string name="referencia">Ingrese los ultimos 5 digitos</string>
 
-    <string name="mensaje">Ingrese el mensaje</string>
+    <string name="inicio_nivel">Vamos a escoger el nivel</string>
+    <string name="mensaje11">¡Hoolaa!</string>
+
+    <string name="mensaje12">Basico</string>
+    <string name="mensaje13">Intermedio</string>
+    <string name="mensaje14">Avanzado</string>
 
 </resources>

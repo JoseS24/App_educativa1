@@ -1,6 +1,5 @@
 package com.example.app_educativa.Inicio_sesion;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -21,7 +20,7 @@ public class tipo_usuario extends AppCompatActivity {
         startActivity(entrar_alumno);
     }
     public void maestro (View view){
-      Intent entrar_maestro = new Intent(this, iniciar_sesionMaestro.class);
+        Intent entrar_maestro = new Intent(this, iniciar_sesionMaestro.class);
         startActivity(entrar_maestro);
     }
     public void primeraVez (View view){

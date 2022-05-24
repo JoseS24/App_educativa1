@@ -28,9 +28,8 @@ public class Login extends AppCompatActivity {
         Intent cuenta_nueva = new Intent(this, crear_cuenta.class);
         startActivity(cuenta_nueva);
     }
-
-    public void iniciar(View view) {
-       Intent iniciar = new Intent(this, tipo_usuario.class);
-         startActivity(iniciar);
+    public void entrar(View view){
+        Intent intent = new Intent(this, tipo_usuario.class);
+        startActivity(intent);
      }
 }

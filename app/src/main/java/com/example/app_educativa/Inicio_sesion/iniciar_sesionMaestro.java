@@ -39,7 +39,7 @@ public class iniciar_sesionMaestro extends AppCompatActivity {
         checar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validarMaestro("http://192.168.28.209:8080/app_educativa/validar_usuarioMaestro.php");
+                validarMaestro("http://192.168.2.25:8080/app_educativa/validar_usuarioMaestro.php");
             }
         });
     }
@@ -62,7 +62,7 @@ public class iniciar_sesionMaestro extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(iniciar_sesionMaestro.this, error.toString(), Toast.LENGTH_SHORT).show();
             }
-    }){
+        }){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> parametro=new HashMap<String,String>();
@@ -70,8 +70,8 @@ public class iniciar_sesionMaestro extends AppCompatActivity {
                 parametro.put("contrasena",contrasena.getText().toString());
                 parametro.put("rfc",rfc.getText().toString());
                 return parametro;
-        }
-    };
+            }
+        };
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
     }
