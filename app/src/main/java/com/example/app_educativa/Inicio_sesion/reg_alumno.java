@@ -53,7 +53,19 @@ public class reg_alumno extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(getApplicationContext(), "Registro exitoso", Toast.LENGTH_SHORT).show();
+                if (nombre.getText().toString().isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Falta el nombre", Toast.LENGTH_SHORT).show();
+                }else if (edad.getText().toString().isEmpty()){
+                     Toast.makeText(getApplicationContext(), "Falta la edad", Toast.LENGTH_SHORT).show();
+                    } else if (celular.getText().toString().isEmpty()) {
+                         Toast.makeText(getApplicationContext(), "Falta el celular", Toast.LENGTH_SHORT).show();
+                        }else if (usuario.getText().toString().isEmpty()) {
+                           Toast.makeText(getApplicationContext(), "Falta tu usuario", Toast.LENGTH_SHORT).show();
+                             }else if (contrasena.getText().toString().isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Falta tu contrasena", Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(getApplicationContext(), "Registro exitoso", Toast.LENGTH_SHORT).show();
+                }
             }
         }, new Response.ErrorListener() {
             @Override
@@ -68,14 +80,13 @@ public class reg_alumno extends AppCompatActivity {
                 parametros.put("celular", celular.getText().toString());
                 parametros.put("usuario", usuario.getText().toString());
                 parametros.put("contrasena", contrasena.getText().toString());
+
                 return parametros;
             }
+
         };
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
-
-        Intent intent = new Intent(this,alumno_registrado.class);
-        startActivity(intent);
     }
     public void regreso_menu(View view){
         Intent regresar = new Intent(this, crear_cuenta.class);

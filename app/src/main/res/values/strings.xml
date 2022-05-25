@@ -59,4 +59,18 @@
     <string name="mensaje13">Intermedio</string>
     <string name="mensaje14">Avanzado</string>
 
+    <string name="basico1">Nivel basico</string>
+    <string name="basico2">Actividad 1: Vocales</string>
+    <string name="basico3">Haz clic para oir la letra</string>
+    <string name="basico4">Letra a</string>
+    <string name="basico5">Letra e</string>
+    <string name="basico6">Letra i</string>
+    <string name="basico7">Letra o</string>
+    <string name="basico8">Letra u</string>
+
+    <string name="intermedio">Nivel Intermedio</string>
+    <string name="intermedio1">Actividad 1: Numeros</string>
+    <string name="intermedio2">Actividad 2: Palabras</string>
+    <string name="intermedio3">Continuar</string>
+    <string name="intermedio4">Presiona para escuchar el sonido del numero</string>
 </resources>

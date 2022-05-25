@@ -13,7 +13,43 @@
         android:theme="@style/Theme.App_educativa"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".iniciar_sesionMaestro"
+            android:name=".actividades.intermedio.numero3_intermedio"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.intermedio.numero2_intermedio"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.intermedio.numero1_intermedio"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.intermedio.entrada_menuIntermedio"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.intermedio.menu_intermedio"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.basico.basicoU"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.basico.basicoI"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.basico.basicoE"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.basico.basicoA"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.basico.basicoO"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.basico.actividad_basicoE"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.basico.actividad1_basico"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio_sesion.iniciar_sesionMaestro"
             android:exported="false" />
         <activity
             android:name=".Inicio_sesion.iniciar_sesion"
@@ -22,13 +58,7 @@
             android:name=".Inicio_sesion.tipo_usuario"
             android:exported="false" />
         <activity
-            android:name=".Inicio_sesion.tipo_usuario"
-            android:exported="false" />
-        <activity
             android:name=".actividades.nivel_avanzado"
-            android:exported="false" />
-        <activity
-            android:name=".inicio_sesion"
             android:exported="false" />
         <activity
             android:name=".actividades.menu_niveles"

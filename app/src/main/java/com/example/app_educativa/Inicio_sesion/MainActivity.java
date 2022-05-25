@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.app_educativa.Inicio_sesion.Login;
 import com.example.app_educativa.R;
 
 public class MainActivity extends AppCompatActivity {
