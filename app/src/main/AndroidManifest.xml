@@ -13,6 +13,15 @@
         android:theme="@style/Theme.App_educativa"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".actividades.basico.portada_letras"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.basico.portada_vocal"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.basico.entrada_basico"
+            android:exported="false" />
+        <activity
             android:name=".actividades.intermedio.numero3_intermedio"
             android:exported="false" />
         <activity
