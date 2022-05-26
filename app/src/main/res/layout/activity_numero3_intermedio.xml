@@ -82,7 +82,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginBottom="660dp"
         android:rotationX="-8"
-        android:text="Nivel Intermedio"
+        android:text="@string/intermedio"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="25"
