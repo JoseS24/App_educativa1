@@ -82,20 +82,10 @@ public class reg_maestro extends AppCompatActivity {
         };
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
-
-        Intent intent = new Intent(this,maestro_registrado.class);
-        startActivity(intent);
+        
     }
     public void regreso_menu(View view){
         Intent regresar = new Intent(this, crear_cuenta.class);
         startActivity(regresar);
     }
 }
-
-
-
-
-
-
-
-

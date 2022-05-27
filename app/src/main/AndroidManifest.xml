@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.app_educativa">
+    package="com.example.app_educativa" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.App_educativa"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true" >
         <activity
             android:name=".actividades.basico.portada_letras"
             android:exported="false" />
@@ -73,9 +73,6 @@
             android:name=".Inicio_sesion.maestro_registrado"
             android:exported="false" />
         <activity
-            android:name=".Inicio_sesion.reg_maestro"
-            android:exported="false" />
-        <activity
             android:name=".Inicio_sesion.reg_alumno"
             android:exported="false" />
         <activity
@@ -86,7 +83,7 @@
             android:exported="false" />
         <activity
             android:name=".Inicio_sesion.MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

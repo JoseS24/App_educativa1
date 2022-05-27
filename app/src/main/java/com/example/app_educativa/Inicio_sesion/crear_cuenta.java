@@ -26,9 +26,9 @@ public class crear_cuenta extends AppCompatActivity {
         startActivity(cuenta_nueva);
     }
 
-    public void cuenta_maestro(View view) {
-        Intent cuenta_nueva = new Intent(this, reg_maestro.class);
-        startActivity(cuenta_nueva);
+    public void cuenta_maestro(View view){
+        Intent intent = new Intent(this,reg_maestro.class);
+        startActivity(intent);
     }
     public void entrada(View view){
         Intent intent = new Intent(this,tipo_usuario.class);
