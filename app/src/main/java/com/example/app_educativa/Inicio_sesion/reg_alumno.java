@@ -27,7 +27,7 @@ import java.util.Map;
 public class reg_alumno extends AppCompatActivity {
     private EditText nombre, edad, celular, usuario, contrasena;
     Button agregar;
-
+    String nom,eda,cel,usu,contra;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +41,20 @@ public class reg_alumno extends AppCompatActivity {
         contrasena = (EditText) findViewById(R.id.txtcontrasena2);
         agregar = (Button) findViewById(R.id.boton_alumno);
 
+
         agregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                guardar("http://192.168.2.25:8080/app_educativa/insertar_datos.php");
+                nom = nombre.getText().toString();
+                eda = edad.getText().toString();
+                cel = celular.getText().toString();
+                usu = usuario.getText().toString();
+                contra = contrasena.getText().toString();
+                if(!nom.isEmpty() && !eda.isEmpty() && !cel.isEmpty() && !usu.isEmpty() && !contra.isEmpty()){
+                    guardar("http://192.168.2.25:8080/app_educativa/insertar_datos.php");
+                }else{
+                    Toast.makeText(getApplicationContext(),"Faltan datos por llenar",Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -53,20 +63,8 @@ public class reg_alumno extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                if (nombre.getText().toString().isEmpty()) {
-                    Toast.makeText(getApplicationContext(), "Falta el nombre", Toast.LENGTH_SHORT).show();
-                }else if (edad.getText().toString().isEmpty()){
-                     Toast.makeText(getApplicationContext(), "Falta la edad", Toast.LENGTH_SHORT).show();
-                    } else if (celular.getText().toString().isEmpty()) {
-                         Toast.makeText(getApplicationContext(), "Falta el celular", Toast.LENGTH_SHORT).show();
-                        }else if (usuario.getText().toString().isEmpty()) {
-                           Toast.makeText(getApplicationContext(), "Falta tu usuario", Toast.LENGTH_SHORT).show();
-                             }else if (contrasena.getText().toString().isEmpty()) {
-                    Toast.makeText(getApplicationContext(), "Falta tu contrasena", Toast.LENGTH_SHORT).show();
-                }else{
                     Toast.makeText(getApplicationContext(), "Registro exitoso", Toast.LENGTH_SHORT).show();
                 }
-            }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
@@ -75,18 +73,20 @@ public class reg_alumno extends AppCompatActivity {
         }) {
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> parametros = new HashMap<String, String>();
-                parametros.put("nombre", nombre.getText().toString());
-                parametros.put("edad", edad.getText().toString());
-                parametros.put("celular", celular.getText().toString());
-                parametros.put("usuario", usuario.getText().toString());
-                parametros.put("contrasena", contrasena.getText().toString());
-
+                parametros.put("nombre", nom);
+                parametros.put("edad", eda);
+                parametros.put("celular", cel);
+                parametros.put("usuario", usu);
+                parametros.put("contrasena", contra);
                 return parametros;
             }
 
         };
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
+
+        Intent intent = new Intent(this,alumno_registrado.class);
+        startActivity(intent);
     }
     public void regreso_menu(View view){
         Intent regresar = new Intent(this, crear_cuenta.class);

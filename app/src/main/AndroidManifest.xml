@@ -52,12 +52,6 @@
             android:name=".actividades.basico.basicoO"
             android:exported="false" />
         <activity
-            android:name=".actividades.basico.actividad_basicoE"
-            android:exported="false" />
-        <activity
-            android:name=".actividades.basico.actividad1_basico"
-            android:exported="false" />
-        <activity
             android:name=".Inicio_sesion.iniciar_sesionMaestro"
             android:exported="false" />
         <activity

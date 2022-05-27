@@ -6,49 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Inicio_sesion.reg_maestro">
 
-    <EditText
-        android:id="@+id/contrasena2"
-        android:layout_width="259dp"
-        android:layout_height="60dp"
-        android:ems="10"
-        android:hint="@string/contraseña"
-        android:inputType="numberPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
-
-    <EditText
-        android:id="@+id/nombre_usuario2"
-        android:layout_width="253dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:hint="@string/nombre_usuario"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.765"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/usuario"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#2196F3"
-        android:textColorHighlight="#2196F3"
-        android:textColorLink="#2196F3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58" />
-
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="57dp"
@@ -73,59 +30,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.173" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nombre_alumno"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.265"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.261" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="56dp"
-        android:layout_height="61dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.378"
-        app:srcCompat="@drawable/icono_edad" />
+        app:layout_constraintVertical_bias="0.144" />
 
     <EditText
-        android:id="@+id/Mnombre"
-        android:layout_width="210dp"
-        android:layout_height="44dp"
+        android:id="@+id/Mcelular"
+        android:layout_width="203dp"
+        android:layout_height="45dp"
         android:ems="10"
-        android:hint="@string/nombre"
-        android:inputType="textPersonName"
+        android:hint="celular"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/edad_alumno"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintVertical_bias="0.471" />
 
     <EditText
         android:id="@+id/Maños"
@@ -139,32 +58,7 @@
         app:layout_constraintHorizontal_bias="0.899"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <Button
-        android:id="@+id/guardar_maestro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/boton_registro"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.935" />
-
-    <EditText
-        android:id="@+id/Mcelular"
-        android:layout_width="203dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:hint="celular"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.923"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintVertical_bias="0.355" />
 
     <TextView
         android:id="@+id/textView8"
@@ -178,31 +72,7 @@
         app:layout_constraintHorizontal_bias="0.281"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="51dp"
-        android:layout_height="53dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.495"
-        app:srcCompat="@drawable/icono_telefono" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="60dp"
-        android:layout_height="59dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798"
-        app:srcCompat="@drawable/icono_contrasena" />
+        app:layout_constraintVertical_bias="0.471" />
 
     <ImageView
         android:id="@+id/imageView26"
@@ -213,8 +83,87 @@
         app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252"
+        app:layout_constraintVertical_bias="0.223"
         app:srcCompat="@drawable/icono_persona4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="56dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349"
+        app:srcCompat="@drawable/icono_edad" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="51dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466"
+        app:srcCompat="@drawable/icono_telefono" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usuario"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#2196F3"
+        android:textColorHighlight="#2196F3"
+        android:textColorLink="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <EditText
+        android:id="@+id/nombre_usuario2"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="@string/nombre_usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.634" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="60dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.743"
+        app:srcCompat="@drawable/icono_contrasena" />
+
+    <EditText
+        android:id="@+id/contrasena2"
+        android:layout_width="259dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="@string/contraseña"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744" />
 
     <ImageView
         android:id="@+id/imageView30"
@@ -225,13 +174,65 @@
         app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665"
+        app:layout_constraintVertical_bias="0.631"
         app:srcCompat="@drawable/icono_persona4" />
+
+    <EditText
+        android:id="@+id/Mnombre"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edad_alumno"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_alumno"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <Button
+        android:id="@+id/guardar_maestro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_registro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905" />
 
     <ImageView
         android:id="@+id/imageView31"
-        android:layout_width="177dp"
-        android:layout_height="112dp"
+        android:layout_width="157dp"
+        android:layout_height="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

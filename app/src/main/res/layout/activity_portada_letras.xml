@@ -49,31 +49,6 @@
         tools:layout_editor_absoluteX="261dp"
         tools:layout_editor_absoluteY="325dp" />
 
-    <ImageView
-        android:id="@+id/imageView50"
-        android:layout_width="125dp"
-        android:layout_height="108dp"
-        android:rotation="7"
-        app:srcCompat="@drawable/F"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="314dp" />
-
-    <ImageView
-        android:id="@+id/imageView53"
-        android:layout_width="119dp"
-        android:layout_height="108dp"
-        app:srcCompat="@drawable/p"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="652dp" />
-
-    <ImageView
-        android:id="@+id/imageView51"
-        android:layout_width="121dp"
-        android:layout_height="124dp"
-        android:rotation="10"
-        app:srcCompat="@drawable/f"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="305dp" />
 
     <ImageView
         android:id="@+id/imageView52"

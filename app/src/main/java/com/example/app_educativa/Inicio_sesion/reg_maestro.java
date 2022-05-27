@@ -22,8 +22,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class reg_maestro extends AppCompatActivity {
-    private EditText nombre, edad, celular, usuario, contrasena;
+    private EditText nombre, edad, celular, usuario, contrasena,rfc;
     Button agregar;
+    String nom,eda,cel,usu,contra,rf;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +38,22 @@ public class reg_maestro extends AppCompatActivity {
         contrasena = (EditText) findViewById(R.id.contrasena2);
         agregar = (Button) findViewById(R.id.guardar_maestro);
 
+
         agregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                nom = nombre.getText().toString();
+                eda = edad.getText().toString();
+                cel = celular.getText().toString();
+                usu = usuario.getText().toString();
+                contra = contrasena.getText().toString();
+                rf = rfc.getText().toString();
+                if (!nom.isEmpty() && !eda.isEmpty() && !cel.isEmpty() && !usu.isEmpty() && !contra.isEmpty() && !rf.isEmpty()) {
                     guardarM("http://192.168.2.25:8080/app_educativa/insertar_maestros.php");
+                } else {
+                    Toast.makeText(getApplicationContext(), "Faltan datos por llenar", Toast.LENGTH_SHORT).show();
                 }
+            }
         });
     }
 
@@ -59,11 +71,12 @@ public class reg_maestro extends AppCompatActivity {
         }) {
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> parametro = new HashMap<String, String>();
-                parametro.put("nombre", nombre.getText().toString());
-                parametro.put("edad", edad.getText().toString());
-                parametro.put("celular", celular.getText().toString());
-                parametro.put("usuario", usuario.getText().toString());
-                parametro.put("contrasena", contrasena.getText().toString());
+                parametro.put("nombre", nom);
+                parametro.put("edad", eda);
+                parametro.put("celular", cel);
+                parametro.put("usuario", usu);
+                parametro.put("contrasena", contra);
+                parametro.put("RFC",rf);
                 return parametro;
             }
         };
